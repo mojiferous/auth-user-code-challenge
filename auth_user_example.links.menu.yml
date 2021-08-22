@@ -1,0 +1,6 @@
+auth_user_example.auth_user_example_config_form:
+  title: 'Auth User Example Settings'
+  route_name: auth_user_example.auth_user_example_config_form
+  description: 'Auth User Example settings'
+  parent: user.admin_index
+  weight: 99

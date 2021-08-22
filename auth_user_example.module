@@ -1,0 +1,22 @@
+<?php
+/**
+ * @file
+ * auth_user_example.module.php
+ *
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function auth_user_example_theme($existing, $type, $theme, $path) {
+  return [
+    'auth_user_example_block' => [
+      'variables' => [
+        'username' => '',
+        'last_login' => '',
+        'profile_link' => '',
+        'admin_message' => '',
+      ],
+    ],
+  ];
+}

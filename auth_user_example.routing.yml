@@ -1,0 +1,9 @@
+auth_user_example.auth_user_example_config_form:
+  path: '/admin/config/people/auth-user-example'
+  defaults:
+    _form: '\Drupal\auth_user_example\Form\AuthUserExampleConfigForm'
+    _title: 'Auth User Example Config Form'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

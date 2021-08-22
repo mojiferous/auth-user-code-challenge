@@ -1,0 +1,5 @@
+name: Authenticated User coding challenge
+type: module
+description: Displays message for authenticated user
+core_version_requirement: ^8 || ^9
+package: Custom

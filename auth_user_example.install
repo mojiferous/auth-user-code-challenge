@@ -1,0 +1,24 @@
+<?php
+
+use Drupal\block\Entity\Block;
+
+/**
+ * Implements hook_install().
+ */
+function auth_user_example_install($is_syncing) {
+  // Add our block to the sidebar_first region on module install.
+  $block = Block::create([
+    'id' => 'authenticateduserinformationblock',
+    'plugin' => 'auth_user_example_block',
+    'region' => 'sidebar_first',
+    'weight' => -100,
+    'theme' => 'bartik',
+    'visibility' => [],
+    'settings' => [
+      'label' => 'Authenticated User Information Block',
+      'label_display' => '0',
+    ],
+  ]);
+
+  $block->save();
+}
